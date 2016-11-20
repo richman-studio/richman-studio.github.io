@@ -1,55 +1,289 @@
-*{
-	box-sizing: border-box;
-	font-family: sans-serif;
+*{box-sizing: border-box; font-family: sans-serif;}
+
+html, body{
+	background-color: #f6f5f5;
+	padding: 0;
+	margin: 0;
 }
 
-body{
-	background-color: lavender;
-}
-
+/*----------CONTAINER STYLE----------*/
 .container {
 	position: relative;
 	width: 760px;
-	border: black 1px solid;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 }
 
+/*----------COLUMN STYLES----------*/
+.col-1{
+	position: relative;
+	width: 170px;
+	padding: 0 10px;
+	display: inline-block;
+	float: left;
+    top: 10px;
+}
+.col-2{
+	position: relative;
+	width: 360px;
+	padding: 0 10px;
+	display: inline-block;
+}
+.col-3{
+	position: relative;
+	width: 570px;
+	padding: 0 10px;
+	display: inline-block;
+}
+.col-4{
+	position: relative;
+	width: 740px;
+	padding: 0 10px;
+	display: inline-block;
+}
+
+
+/*----------MEAN STYLES----------*/
 .menu {
 	position: fixed;
 	right: 15px;
-	background-color: lightblue;
-	bottom: 45px;
-	width: 100px;
+	background-color: white;
+	bottom: 50px;
+	width: 120px;
+	border-radius: 3px;
+	border: gray 1px solid;
+	overflow: hidden;
 }
+
 .menu > a {
 	position: relative;
 	display: block;
+	text-align: right;
 	width: 100%;
 	font-size: 75%;
-	right: 0;
-	left: 0;
 	text-decoration: none;
-	color: black;
-	padding: 3px;
-	margin: 0 10px 0 auto;
+	color: gray;
+	padding: 5px;
+	border-right: white 5px solid;
 }
+
+.menu > a:hover {background-color: #e2e0e0;border-right: #e2e0e0 5px solid; }
+a.current {border-right: #39cf9b 5px solid;}
+
+a.current:hover {border-right: #39cf9b 5px solid;}
+
 .menu-button {
 	position: fixed;
 	bottom: 15px;
 	right: 15px;
-	padding: 5px;
+	padding: 5px 10px;
 	font-size: 75%;
 	cursor: pointer;
-	background-color: lightblue;
-	color: black;
+	background-color: #e2e0e0;
+	color: gray;
+	border-radius: 3px;
+	border: gray 1px solid;
+	animation: glow 6s;
+	animation-delay: 1s;
 }
-.play-button {
-	position: fixed;
-	bottom: 15px;
-	right: 15px;
-	padding: 5px;
+
+@keyframes glow {
+	0%{box-shadow: 0px 0px 0px 0px rgba(57, 207, 155, .5);}
+	20%{box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+	40%{box-shadow: 0px 0px 0px 0px rgba(57, 207, 155, .5)}
+	60%{box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+	80%{box-shadow: 0px 0px 0px 0px rgba(57, 207, 155, .5)}
+	100%{box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+}
+.menu-button:hover {color: #39cf9b; border-color: #39cf9b; box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+.glow {box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+
+
+/*----------COVER PAGE STYLES----------*/
+div.cover-col {
+	position: absolute ;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	background-color: black;
+	padding: 10px 0;
+	top: 50%;
+	bottom: 50%;
+	transform: translateY(-50%);
+	animation: slidein 1.5s;
+}
+
+h1.name {font-family: stencil; color: white;}
+h2.statement {color: #39cf9b;}
+
+@keyframes slidein {
+	0%{
+		transform: translateY(-1000%);
+	}
+	100%{
+		transform: translateY(-50%);
+	}
+}
+
+/*----------ABOUT PAGE STYLES----------*/
+.pro-image {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border: #39cf9b 5px solid;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: 50px;
+	animation: flyinImage 2s;
+}
+
+@keyframes flyinImage {
+	0%{
+		top: 2500px;
+		left: -1000px;
+	}
+	85%{
+		top: -10px;
+		left: 10px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+	}
+}
+
+.pro-image > img {
+	width: 100%;
+	margin-top: -30px;
+}
+
+.resume {
+	color: gray;
+	animation: flyinAbout 2s;
+}
+
+@keyframes flyinAbout {
+	0%{
+		top: 2500px;
+		right: -1000px;
+		transform: rotate(-90deg);
+	}
+	85%{
+		right: 0px;
+		transform: rotate(2deg);
+	}
+	100%{
+		
+		transform: rotate(0deg);
+	}
+}
+
+/*----------RESUME PAGE STYLES----------*/
+.left {position: absolute; left: 0; top: 0; animation: leftCol 2s;}
+.right {position: absolute; right: 0; top: 0; animation: rightCol 2s;}
+
+@keyframes leftCol{
+	0% {left: -1000px;}
+	100% {left: 0;}
+}
+
+@keyframes rightCol{
+	0% {right: -1000px;}
+	100% {right: 0;}
+}
+
+/*----------WORK EXPERIENCE----------*/
+.main-heading {
+	border: #39cf9b 3px solid;
+	color: #39cf9b;
+	padding: 0px 5px;
+	font-size: 150%;
+}
+.job {
+	padding: 0 0 25px 0
+}
+.heading {
+	color: #39cf9b;
 	font-size: 75%;
-	cursor: pointer;
 }
+.date {
+	float: left;
+}
+.location {
+	float: right;
+}
+.position {
+	display: inline-block;
+	margin: 5px 0;
+}
+.company {}
+.description {
+	font-size: 75%;
+}
+.task-head {
+	color: #39cf9b;
+	font-size: 75%;
+	margin-top: 10px;
+}
+.tasks {
+	font-size: 85%;
+}
+.tasks > p {
+	padding: 2px 0px;
+	margin: 0;
+}
+.ref {
+	font-size: 75%;
+	padding-top: 5px;
+}
+span.number {
+	color: #39cf9b;
+}
+
+/*----------SKILLS STYLING----------*/
+.skills {
+	border: #39cf9b 3px solid;
+	color: #39cf9b;
+	padding: 0px 5px;
+	font-size: 150%;
+}
+.skill-group {
+	width: 100%;
+	font-size: 85%;
+	display: inline-block;
+	text-align: right;
+}
+.skill {
+	width: 48%;
+	display: inline-block;
+	padding: 5px 0;
+}
+.bar {
+	width: 48%;
+	height: 10px;
+	border: #39cf9b 2px solid;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+/*----------BAR SIZING STYLING----------*/
+.amount {
+	background-color: #39cf9b;
+	width: 100%;
+	height: 100%;
+}
+
+.AD, .GD, .3D, .DA, .ART, .MS, .CW {width: 100%}
+
+.DD, .CD, .ARC, .AUT, .ADP, .CGS, .WDS, .SK {width: 90%}
+
+.REV, .APP, .PG, .PA {width: 80%}
+
+.AID {width: 70%}
+
+.PM {width: 60%}
+
+.WDV {width: 40%}
+
+.ADI {width: 30%}
