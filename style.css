@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: lavender;
+}
+
+.container {
+	position: relative;
+	width: 760px;
+	border: black 1px solid;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.menu {
+	position: fixed;
+	right: 15px;
+	background-color: lightblue;
+	bottom: 45px;
+	width: 100px;
+}
+.menu > a {
+	position: relative;
+	display: block;
+	width: 100%;
+	font-size: 75%;
+	right: 0;
+	left: 0;
+	text-decoration: none;
+	color: black;
+	padding: 3px;
+	margin: 0 10px 0 auto;
+}
+.menu-button {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	padding: 5px;
+	font-size: 75%;
+	cursor: pointer;
+	background-color: lightblue;
+	color: black;
+}
+.play-button {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	padding: 5px;
+	font-size: 75%;
+	cursor: pointer;
+}
