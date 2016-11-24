@@ -207,39 +207,26 @@ h2.statement {color: #39cf9b;}
 	color: #39cf9b;
 	font-size: 75%;
 }
-.date {
-	float: left;
-}
-.location {
-	float: right;
-}
+.date {float: left;}
+.location {float: right;}
 .position {
 	display: inline-block;
 	margin: 5px 0;
 }
 .company {}
-.description {
-	font-size: 75%;
-}
+.description {font-size: 75%;}
 .task-head {
 	color: #39cf9b;
 	font-size: 75%;
 	margin-top: 10px;
 }
-.tasks {
-	font-size: 85%;
-}
-.tasks > p {
-	padding: 2px 0px;
-	margin: 0;
-}
+.tasks {font-size: 85%;}
+.tasks > p { padding: 2px 0px;margin: 0;}
 .ref {
 	font-size: 75%;
 	padding-top: 5px;
 }
-span.number {
-	color: #39cf9b;
-}
+span.number { color: #39cf9b;}
 
 /*----------SKILLS STYLING----------*/
 .skills {
@@ -287,3 +274,40 @@ span.number {
 .WDV {width: 40%}
 
 .ADI {width: 30%}
+
+/*----------LANGUAGES STYLING----------*/
+
+.lang { width: 100%; position: relative;}
+
+.lang-box {
+	width: 24%;
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.lang-bar {
+	position: relative;
+	width: 50%;
+	height: 50px;
+	left: 0;
+	right: 0;
+	transform: translateX(50%);
+	border: #39cf9b 2px solid;
+}
+
+.lang-amount { position: relative; background-color: #39cf9b;}
+
+.eng, .zul { position: relative; height: 100%;}
+.ses { margin: 70% 0 0 0; height: 50%;}
+.afr { margin: 90% 0 0 0; position: relative; height: 30%;}
+
+.lang-text {margin-top: 10px; font-size: 85%;}
+
+
+/*----------CERTIFICATE STYLING----------*/
+
+
+/*----------EDUCATION STYLING----------*/
