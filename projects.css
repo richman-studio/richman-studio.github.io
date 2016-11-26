@@ -1,0 +1,71 @@
+.pro-head {
+	position: relative;
+	color: blue;
+	border: blue 3px solid;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.pro-box {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 49.5%;
+	height: 300px;
+	display: inline-block;
+}
+
+.card-box {
+	position: relative;
+	width: 95%;
+	height: 95%;
+	padding: 0;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all .5s;
+	overflow: hidden;
+}
+
+.card-box:hover {
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5);
+	width: 95.5%;
+	height: 95.5%;
+	cursor: pointer;
+}
+
+.img-box {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 75%;
+	padding: 0;
+	margin: 0;
+	top: 0;
+}
+
+.lod{background: url('img/log01.jpg') no-repeat; background-size: cover;}
+.nat{background: url('img/nat01.jpg') no-repeat; background-size: cover;}
+.tri{background: url('img/2101.jpg') no-repeat; background-size: cover;}
+.ivy{background: url('img/ivy01.jpg') no-repeat; background-size: cover;}
+.vos{background: url('img/vos01.jpg') no-repeat; background-size: cover;}
+.wak{background: url('img/wak01.jpg') no-repeat; background-size: cover;}
+.az{background: url('img/az01.jpg') no-repeat; background-size: cover;}
+.grn{background: url('img/grn01.jpg') no-repeat; background-size: cover;}
+.mat{background: url('img/mat01.jpg') no-repeat; background-size: cover;}
+
+.des-box {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 25%;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+	background-color: white;
+}

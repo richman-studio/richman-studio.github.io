@@ -1,10 +1,6 @@
 *{box-sizing: border-box; font-family: sans-serif;}
 
-html, body{
-	background-color: #f6f5f5;
-	padding: 0;
-	margin: 0;
-}
+html, body{background-color: #f6f5f5;padding: 0;margin: 0;}
 
 /*----------CONTAINER STYLE----------*/
 .container {
@@ -49,11 +45,13 @@ html, body{
 	position: fixed;
 	right: 15px;
 	background-color: white;
-	bottom: 50px;
+	bottom: 50%;
+	transform: translateY(50%);
 	width: 120px;
 	border-radius: 3px;
 	border: gray 1px solid;
 	overflow: hidden;
+	display: block;
 }
 
 .menu > a {
@@ -69,9 +67,9 @@ html, body{
 }
 
 .menu > a:hover {background-color: #e2e0e0;border-right: #e2e0e0 5px solid; }
-a.current {border-right: #39cf9b 5px solid;}
+a.current {border-right: blue 5px solid;}
 
-a.current:hover {border-right: #39cf9b 5px solid;}
+a.current:hover {border-right: blue 5px solid;}
 
 .menu-button {
 	position: fixed;
@@ -86,18 +84,19 @@ a.current:hover {border-right: #39cf9b 5px solid;}
 	border: gray 1px solid;
 	animation: glow 6s;
 	animation-delay: 1s;
+	display: none;
 }
 
 @keyframes glow {
-	0%{box-shadow: 0px 0px 0px 0px rgba(57, 207, 155, .5);}
-	20%{box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
-	40%{box-shadow: 0px 0px 0px 0px rgba(57, 207, 155, .5)}
-	60%{box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
-	80%{box-shadow: 0px 0px 0px 0px rgba(57, 207, 155, .5)}
-	100%{box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+	0%{box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, .5);}
+	20%{box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5)}
+	40%{box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, .5)}
+	60%{box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5)}
+	80%{box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, .5)}
+	100%{box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5)}
 }
-.menu-button:hover {color: #39cf9b; border-color: #39cf9b; box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
-.glow {box-shadow: 0px 0px 5px 5px rgba(57, 207, 155, .5)}
+.menu-button:hover {color: blue; border-color: blue; box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5)}
+.glow {box-shadow: 0px 0px 5px 5px rgba(0, 0, 255, .5)}
 
 
 /*----------COVER PAGE STYLES----------*/
@@ -115,7 +114,7 @@ div.cover-col {
 }
 
 h1.name {font-family: stencil; color: white;}
-h2.statement {color: #39cf9b;}
+h2.statement {color: blue;}
 
 @keyframes slidein {
 	0%{
@@ -131,7 +130,7 @@ h2.statement {color: #39cf9b;}
 	position: relative;
 	width: 150px;
 	height: 150px;
-	border: #39cf9b 5px solid;
+	border: blue 5px solid;
 	border-radius: 50%;
 	overflow: hidden;
 	margin-top: 50px;
@@ -159,7 +158,7 @@ h2.statement {color: #39cf9b;}
 }
 
 .resume {
-	color: gray;
+	color: skyblue;
 	animation: flyinAbout 2s;
 }
 
@@ -195,8 +194,8 @@ h2.statement {color: #39cf9b;}
 
 /*----------WORK EXPERIENCE----------*/
 .main-heading {
-	border: #39cf9b 3px solid;
-	color: #39cf9b;
+	border: blue 3px solid;
+	color: blue;
 	padding: 0px 5px;
 	font-size: 150%;
 }
@@ -204,34 +203,24 @@ h2.statement {color: #39cf9b;}
 	padding: 0 0 25px 0
 }
 .heading {
-	color: #39cf9b;
+	color: blue;
 	font-size: 75%;
 }
 .date {float: left;}
 .location {float: right;}
-.position {
-	display: inline-block;
-	margin: 5px 0;
-}
+.position {display: inline-block; margin: 5px 0;}
 .company {}
 .description {font-size: 75%;}
-.task-head {
-	color: #39cf9b;
-	font-size: 75%;
-	margin-top: 10px;
-}
+.task-head {color: blue; font-size: 75%; margin-top: 10px;}
 .tasks {font-size: 85%;}
 .tasks > p { padding: 2px 0px;margin: 0;}
-.ref {
-	font-size: 75%;
-	padding-top: 5px;
-}
-span.number { color: #39cf9b;}
+.ref {font-size: 75%; padding-top: 5px;}
+span.number { color: blue;}
 
 /*----------SKILLS STYLING----------*/
 .skills {
-	border: #39cf9b 3px solid;
-	color: #39cf9b;
+	border: blue 3px solid;
+	color: blue;
 	padding: 0px 5px;
 	font-size: 150%;
 }
@@ -249,14 +238,14 @@ span.number { color: #39cf9b;}
 .bar {
 	width: 48%;
 	height: 10px;
-	border: #39cf9b 2px solid;
+	border: blue 2px solid;
 	display: inline-block;
 	border-radius: 5px;
 }
 
 /*----------BAR SIZING STYLING----------*/
 .amount {
-	background-color: #39cf9b;
+	background-color: blue;
 	width: 100%;
 	height: 100%;
 }
@@ -295,10 +284,10 @@ span.number { color: #39cf9b;}
 	left: 0;
 	right: 0;
 	transform: translateX(50%);
-	border: #39cf9b 2px solid;
+	border: blue 2px solid;
 }
 
-.lang-amount { position: relative; background-color: #39cf9b;}
+.lang-amount { position: relative; background-color: blue;}
 
 .eng, .zul { position: relative; height: 100%;}
 .ses { margin: 70% 0 0 0; height: 50%;}
@@ -311,3 +300,49 @@ span.number { color: #39cf9b;}
 
 
 /*----------EDUCATION STYLING----------*/
+
+
+
+/*----------------------------------------------------------
+OPENING SCREEN 759 PIXEL
+----------------------------------------------------------*/
+@media screen and (max-width:759px) {
+	.container {width: 100%;}
+
+	.menu {display: none; bottom: 50px; transform: translateY(0%);	}
+
+	.menu-button {display: block;}
+
+	.col-1{width: 170px;}
+	.col-2{width: 50%;}
+	.col-3{width: 100%;}
+	.col-4{width: 100%;}
+
+	div.cover-col {
+		height: 230px;
+	}
+
+	h2.statement {position: absolute; bottom: 15px; left: 0; right: 0; margin: 0 auto;}
+}
+
+
+/*----------------------------------------------------------
+OPENING SCREEN 360 PIXEL
+----------------------------------------------------------*/
+@media screen and (max-width:360px) {
+	.col-1{width: 170px;}
+	.col-2{width: 100%;}
+	.col-3{width: 100%;}
+	.col-4{width: 100%;}
+
+	div.cover-col {
+		height: 230px;
+	}
+}
+
+/*----------------------------------------------------------
+OPENING SCREEN 359 PIXEL
+----------------------------------------------------------*/
+@media screen and (min-width:359px) {
+	
+}

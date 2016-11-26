@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	$('.menu-button').hide().delay(500).fadeIn(500);
+	//$('.menu-button').hide().delay(500).fadeIn(500);
 
-	$('.menu').hide();
+	//$('.menu').hide();
 
 	//$('.menu-button').hide();
 
