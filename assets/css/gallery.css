@@ -1,0 +1,41 @@
+#portfolio {
+  background-color:#000000;
+  text-align:center;
+  margin:0;
+  padding:40px 20px;
+  color:white;
+}
+
+#projects-info-color {
+  margin:0;
+  padding:40px 20px;
+  background-color:#3b5b92;
+}
+
+.container.project-info {
+  max-width:1000px;
+  color:#dcdcdc;
+}
+
+.info-para {
+  margin-bottom:5px;
+}
+
+.strong {
+  font-weight:700;
+}
+
+#gallery-color {
+  margin:0;
+  padding:40px 20px;
+  background-color:#a9b6cb;
+}
+
+.container.gallery {
+  max-width:1000px;
+}
+
+.col-lg-2.images {
+  margin-bottom:20px;
+}
+

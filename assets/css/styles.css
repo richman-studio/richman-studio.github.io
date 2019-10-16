@@ -1,0 +1,127 @@
+.navbar-brand {
+  display:none;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  position:sticky;
+  top:0;
+  box-shadow:0px 5px 5px rgb(42,42,42);
+  background-color:white;
+  z-index:99;
+}
+
+#hero {
+  text-align:center;
+  height:90vh;
+  background:url("../../assets/img/Boundary 02.jpg") no-repeat;
+  background-size:cover;
+  padding:40px 20px;
+}
+
+.jumbotron.hero {
+  background-color:rgba(0,0,0,0.5);
+  color:white;
+  border-radius:25px;
+  max-width:1000px;
+}
+
+.card.profile {
+  max-width:300px;
+  border-radius:50%;
+  border:3px solid white;
+  overflow:hidden;
+  left:0;
+  right:0;
+  margin:0 auto 20px;
+}
+
+.hero > .btn {
+  background-color:rgba(0,0,0,0);
+  border:3px solid white;
+  border-radius:35px;
+  min-width:300px;
+  font-weight:600;
+}
+
+#about {
+  background-color:rgb(59,91,146);
+  margin:0;
+  padding:40px 20px;
+  color:white;
+}
+
+.container.about {
+  max-width:1000px;
+}
+
+.col-lg-6.right {
+  text-align:right;
+}
+
+@media (max-width: 576px) {
+  .col-lg-6.right {
+    text-align:left;
+  }
+}
+
+#skills {
+  margin:0;
+  padding:40px 20px;
+  text-align:center;
+  color:rgb(47,81,139);
+  font-weight:600;
+}
+
+.container.skills {
+  max-width:1000px;
+}
+
+.skills-list {
+  list-style:none;
+}
+
+.hands-on {
+  margin:40px auto;
+}
+
+#experience {
+  background-color:#378088;
+  margin:0;
+  padding:40px 20px;
+  color:rgb(0,0,0);
+  font-weight:700;
+}
+
+.container.experience {
+  max-width:1000px;
+  text-align:center;
+}
+
+.exp-heading {
+  margin-bottom:40px;
+}
+
+.col-lg-6.exp-left {
+  text-align:right;
+}
+
+@media (max-width: 576px) {
+  .col-lg-6.exp-left {
+    text-align:left;
+  }
+}
+
+.col-lg-6.exp-right {
+  text-align:left;
+}
+
+.exp-list {
+  list-style:none;
+  margin-bottom:80px;
+}
+
+#experience {
+  background:url("../../assets/img/scan02.jpg") no-repeat;
+  background-size:cover;
+}
+
